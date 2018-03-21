@@ -20,4 +20,16 @@ public enum Category {
         this.CategoryDrawable = CategoryDrawable;
         this.CategoryData = CategoryData;
     }
+
+    public String getCategoryName() {
+        return CategoryName;
+    }
+
+    public int getCategoryDrawable() {
+        return CategoryDrawable;
+    }
+
+    public String[] getCategoryData() {
+        return CategoryData;
+    }
 }
