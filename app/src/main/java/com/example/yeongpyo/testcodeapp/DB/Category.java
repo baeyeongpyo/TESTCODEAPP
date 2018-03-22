@@ -6,16 +6,16 @@ package com.example.yeongpyo.testcodeapp.DB;
 
 public enum Category {
 
-    Fashion("패션", android.R.drawable.sym_def_app_icon, new String[]{"상의", "하의", "코트"}),
-    Beauty("뷰티", android.R.drawable.sym_def_app_icon, new String[]{"스킨케어","메이크업", "선케어", "향수" }),
-    Household("가구", android.R.drawable.sym_def_app_icon, new String[]{"침실가구", "거실가구", "서재", "수납가구"}),
-    Electronics("가전", android.R.drawable.sym_def_app_icon, new String[]{"TV", "계절가전", "냉장고", "세탁기"});
+    Fashion("패션", android.R.drawable.sym_def_app_icon, new Category_Sub[]{Category_Sub.Fashion_sub1, Category_Sub.Fashion_sub2, Category_Sub.Fashion_sub3}),
+    Beauty("뷰티", android.R.drawable.sym_def_app_icon, new Category_Sub[]{Category_Sub.Beauty1,Category_Sub.Beauty2, Category_Sub.Beauty3, Category_Sub.Beauty4 }),
+    Household("가구", android.R.drawable.sym_def_app_icon, new Category_Sub[]{Category_Sub.Household1, Category_Sub.Household2, Category_Sub.Household3, Category_Sub.Household4}),
+    Electronics("가전", android.R.drawable.sym_def_app_icon, new Category_Sub[]{Category_Sub.Electronics1, Category_Sub.Electronics2, Category_Sub.Electronics3, Category_Sub.Electronics4});
 
     String CategoryName;
     int CategoryDrawable;
-    String[] CategoryData;
+    Category_Sub[] CategoryData;
 
-    Category(String CategoryName, int CategoryDrawable, String[] CategoryData) {
+    Category(String CategoryName, int CategoryDrawable, Category_Sub[] CategoryData) {
         this.CategoryName = CategoryName;
         this.CategoryDrawable = CategoryDrawable;
         this.CategoryData = CategoryData;
@@ -29,7 +29,7 @@ public enum Category {
         return CategoryDrawable;
     }
 
-    public String[] getCategoryData() {
+    public Category_Sub[] getCategoryData() {
         return CategoryData;
     }
 }
