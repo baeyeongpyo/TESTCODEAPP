@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:descendantFocusability="afterDescendants"
-    android:focusable="false">
+    >
 
     <include
         layout="@layout/main_layout"
@@ -13,8 +12,6 @@
         android:layout_height="match_parent" />
 
     <include
-        android:descendantFocusability="afterDescendants"
-        android:focusable="false"
         layout="@layout/navi_view"
         android:layout_gravity="left"
         android:layout_width="match_parent"
