@@ -1,4 +1,4 @@
-package com.example.yeongpyo.testcodeapp.DB;
+package com.example.yeongpyo.testcodeapp.Expendable_Custom;
 
 /**
  * Created by yeongpyo on 2018-03-22.

@@ -13,7 +13,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.v7.view.menu.ExpandedMenuView
+    <com.example.yeongpyo.testcodeapp.Expendable_Custom.CustomExpendeble_ListView
         android:id="@+id/elv_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
