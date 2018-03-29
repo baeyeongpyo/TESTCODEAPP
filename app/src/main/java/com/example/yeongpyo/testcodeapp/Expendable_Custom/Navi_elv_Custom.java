@@ -66,6 +66,7 @@ public class Navi_elv_Custom extends BaseExpandableListAdapter {
             view = LayoutInflater.from(viewGroup.getContext()).inflate(Grouplayout, viewGroup, false);
         GroupHolder holder = new GroupHolder(view);
         holder.getButton().setText(Category.values()[i].getCategoryName());
+        holder.getButton().setCompoundDrawablesWithIntrinsicBounds(viewGroup.getResources().getDrawable(Category.values()[i].CategoryDrawable), null, null, null);
         return view;
     }
 
