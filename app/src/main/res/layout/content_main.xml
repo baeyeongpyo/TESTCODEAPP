@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginEnd="8dp"
@@ -15,5 +15,6 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">>
+    </ViewFlipper>
 </android.support.constraint.ConstraintLayout>
